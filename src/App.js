@@ -1,11 +1,29 @@
 import React, { Component } from "react";
 import logo from "./logo.svg";
+import StarRating from "react-star-rating";
 import "./App.css";
 
 class App extends Component {
   render() {
     return (
       <div className="App">
+        <div class="header">
+          <img class="logo" src={require("./Airbnb_images/Shape.png")} />
+
+          <input class="search" type="text" placeholder="Search hotel" />
+          <button type="button" class="headermenu">
+            Become a host
+          </button>
+          <button type="button" class="headermenu">
+            Help
+          </button>
+          <button type="button" class="headermenu">
+            Sign up
+          </button>
+          <button type="button" class="headermenu">
+            Login
+          </button>
+        </div>
         <div>
           <h2>Explore Airbnb</h2>
         </div>
@@ -35,7 +53,12 @@ class App extends Component {
         <div class="Experiences">
           <div class="card-high">
             <img class="img" src={require("./Airbnb_images/Rectangle-3.png")} />
-            <h4>$29</h4> <p2>Forest therapy</p2>
+            <div class="captiondiv">
+              <p class="p2">
+                <b>$29</b> Forest therapy<br />
+                &#x2605;&#x2605;&#x2605;&#x2605;&#x2605; 3.4 Rating
+              </p>
+            </div>
           </div>
           <div class="card-high">
             <img class="img" src={require("./Airbnb_images/Rectangle-2.png")} />
@@ -70,7 +93,7 @@ class App extends Component {
           </div>
           <div class="card-medium">
             <img class="img" src={require("./Airbnb_images/Rectangle 6.png")} />
-            <h4>>$200 Dreamy Tropical Tree House</h4>
+            <h4>$200 Dreamy Tropical Tree House</h4>
           </div>
         </div>
         <div>
