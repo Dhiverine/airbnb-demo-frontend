@@ -10,7 +10,9 @@ import Tokyo from "./Tokyo.png";
 const Destinations = styled.section`
   display: flex;
   justify-content: space-between;
-  justify-content: center;
+  margin-top: 8px;
+
+
 }
 `;
 const CardPlace = styled.section`
@@ -20,12 +22,16 @@ const CardPlace = styled.section`
   flex-direction: column;
   flex-wrap: wrap;
   margin-right: 18px;
+  font-size: 15px;
   @media only screen and (max-width: 400px) {
     flex-direction: column;
     align-items: left;
   }
 `;
-const Place = styled.span`font-family: Circular-Air-Bold, sans-serif;`;
+const Place = styled.span`
+  margin-top: 8px;
+  font-family: Circular-Air-Bold, sans-serif;
+`;
 
 export default function() {
   return (

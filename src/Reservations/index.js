@@ -28,14 +28,22 @@ const ReservVar = styled.section`
 
 const CardTitle = styled.div``;
 const Capitals = styled.div`
-}
+  margin-top: 12px;
+  font-size: 10px;
+  text-transform: uppercase;
 `;
 
-const District = styled.span`font-family: Circular-Air-Bold;`;
+const District = styled.span`
+  font-size: 18px;
+  font-family: Circular-Air-Bold;
+  margin-top: 2px;
+`;
 const Price = styled.span`
   display: inline-block;
-
+  font-size: 18px;
+  font-family: Circular-Air-Light;
   margin-right: 5px;
+  margin-top: 4px;
 `;
 
 export default function() {

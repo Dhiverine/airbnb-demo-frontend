@@ -26,27 +26,35 @@ const FormHouses = styled.section`
 const CardTitle = styled.div`
   line-height: 18px;
   font-family: Circular-Air-Light, sans-serif;
+  margin-top: 10px;
+  align-objects: space-between;
 `;
 const PriceWithDescr = styled.span`
   font-family: Circular-Air-Bold, sans-serif;
   margin-top: 20px;
+  line-height: 18px;
 `;
 const StarWrapper = styled.span`
 align-vertical: center;
+margin-top: 20px;
 }
 `;
 const Review = styled.span`
   font-size: 12px;
   margin-left: 10px;
   vertical-align: center;
+  margin-top: 20px;
   }
 `;
-const HomeInfo = styled.div`font-family: Circular-Air-Light, sans-serif;`;
+const HomeInfo = styled.div`margin-top: 4px;`;
+
 const HomeInfoEl = styled.span`
+  margin-top: 2px;
+  padding-down: 6px;
   &:before {
     content: "·";
     display: inline-block;
-    up-margin: 5px;
+    margin-top: 2px;
   }
   &:first-child {
     &:before {
@@ -71,9 +79,9 @@ export default function() {
             <img src={Star} alt="star" />
             <img src={Star} alt="star" />
             <img src={Star} alt="star" />
-            <img r src={Star} alt="star" />
+            <img src={Star} alt="star" />
           </StarWrapper>
-          <Review>97 reviews · Superhpst</Review>
+          <Review>97 reviews · Superhost</Review>
         </CardTitle>
       </FormHouses>
       <FormHouses>
@@ -93,7 +101,7 @@ export default function() {
             <img src={Star} alt="star" />
             <img src={Star} alt="star" />
           </StarWrapper>
-          <Review>161 reviews · Superhpst</Review>
+          <Review>161 reviews · Superhost</Review>
         </CardTitle>
       </FormHouses>
       <FormHouses>
@@ -111,7 +119,7 @@ export default function() {
             <img src={Star} alt="star" />
             <img src={Star} alt="star" />
           </StarWrapper>
-          <Review>364 reviews · Superhpst</Review>
+          <Review>364 reviews · Superhost</Review>
         </CardTitle>
       </FormHouses>
     </Homes>

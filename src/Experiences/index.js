@@ -15,7 +15,6 @@ const Experiences = styled.section`
 }
 `;
 const FormExperience = styled.section`
-  /*box-sizing: border-box;*/
   width: 24.9999%;
   display: flex;
   margin-right: 18px;
@@ -28,11 +27,20 @@ const FormExperience = styled.section`
   }
 `;
 const CardTitle = styled.div`
+  flex-direction: column;
+  display: flex;
   line-height: 18px;
   font-family: Circular-Air-Light, sans-serif;
-
-  margin: 0px 0px 0px 0px;*/
+  margin-top: 10px;
+  line-height: 18px;
 `;
+
+const PriceAndDescr = styled.span`
+  font-size: 15px;
+  width: 229px;
+  flex-direction: row;
+`;
+
 const Price = styled.span`
   font-family: Circular-Air-Bold, sans-serif;
   margin-right: 5px;
@@ -41,12 +49,17 @@ const Price = styled.span`
 `;
 const StarWrapper = styled.span`
 align: left;
+margin-top: 7px;
 }
 `;
 const Review = styled.span`
   font-size: 12px;
-  margin-left: 8px;
   vertical-align: center;
+  margin-left: 8px;
+  line-height: normal;
+
+color: #383838;
+  
   }
 `;
 
@@ -54,63 +67,71 @@ export default function() {
   return (
     <Experiences>
       <FormExperience>
-        <img src={ForestTherapy} alt="ForestTherapy" />
+        <img src={ForestTherapy} alt="Forest therapy" />
         <CardTitle>
-          <Price>$29</Price>
-          <span>Forest therapy</span>
+          <PriceAndDescr>
+            <Price>$29</Price>
+            <span>Forest therapy</span>
+          </PriceAndDescr>
           <StarWrapper>
             <img src={Star} alt="star" />
             <img src={Star} alt="star" />
             <img src={Star} alt="star" />
             <img src={Star} alt="star" />
             <img src={Star} alt="star" />
+            <Review>44 reviews</Review>
           </StarWrapper>
-          <Review>44 reviews</Review>
         </CardTitle>
       </FormExperience>
       <FormExperience>
-        <img src={WhaleWatching} alt="WhaleWathcing" />
+        <img src={WhaleWatching} alt="Whale wathcing" />
         <CardTitle>
-          <Price>$69</Price>
-          <span>WhaleWatching</span>
+          <PriceAndDescr>
+            <Price>$69</Price>
+            <span>Whale watching</span>
+          </PriceAndDescr>
           <StarWrapper>
             <img src={Star} alt="star" />
             <img src={Star} alt="star" />
             <img src={Star} alt="star" />
             <img src={Star} alt="star" />
             <img src={Star} alt="star" />
+            <Review>46 reviews</Review>
           </StarWrapper>
-          <Review>46 reviews</Review>
         </CardTitle>
       </FormExperience>
       <FormExperience>
         <img src={TableMountain} alt="TableMountain" />
         <CardTitle>
-          <Price>$69</Price>
-          <span>TableMountain</span>
+          <PriceAndDescr>
+            <Price>$69</Price>
+            <span>Table Mountain Summit, Cable Car Down</span>
+          </PriceAndDescr>
           <StarWrapper>
             <img src={Star} alt="star" />
             <img src={Star} alt="star" />
             <img src={Star} alt="star" />
             <img src={Star} alt="star" />
             <img src={Star} alt="star" />
+            <Review>44 reviews</Review>
           </StarWrapper>
-          <Review>44 reviews</Review>
         </CardTitle>
       </FormExperience>
       <FormExperience>
         <img src={SalsaNight} alt="SalsaNight" />
         <CardTitle>
-          <Price>$50</Price>
-          <span>SalsaNight</span>
+          <PriceAndDescr>
+            <Price>$50</Price>
+            <span>SalsaNight</span>
+          </PriceAndDescr>
           <StarWrapper>
             <img src={Star} alt="star" />
             <img src={Star} alt="star" />
             <img src={Star} alt="star" />
             <img src={Star} alt="star" />
             <img src={Star} alt="star" />
+            <Review>44 reviews</Review>
           </StarWrapper>
-          <Review>44 reviews</Review>
         </CardTitle>
       </FormExperience>
     </Experiences>

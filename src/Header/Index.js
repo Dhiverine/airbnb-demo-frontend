@@ -28,7 +28,6 @@ const InLineLink = styled.a`
   margin-left: 10px;
   margin-right: 5px;
   text-decoration: none;
-  /*justify-content: space-between;*/
 `;
 const Right = styled.div`
   margin-top: 10px;
@@ -36,9 +35,6 @@ const Right = styled.div`
   display: flex;
   align-items: right;
   justify-content: flex-end;
-  /*flex: wrap;*/
-  /*align-items: left;
-  display: inline-block;*/
 `;
 const Left = styled.div`
   display: flex;
