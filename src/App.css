@@ -31,8 +31,60 @@
   }
 }
 
-.frame-of-the-page {
+.container {
   width: 976px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.row {
+  display: flex;
+}
+
+.col-1,
+.col-2,
+.col-3,
+.col-12 {
+  padding-left: 8px;
+  padding-right: 8px;
+  box-sizing: border-box;
+}
+
+.col-1 {
+  flex-basis: 8.3333%;
+}
+.col-2 {
+  flex-basis: 16.6667%;
+}
+.col-3 {
+  flex-basis: 24.9999%;
+}
+.col-4 {
+  flex-basis: 33.3333%;
+}
+.col-5 {
+  flex-basis: 41.6666%;
+}
+.col-6 {
+  flex-basis: 50%;
+}
+.col-7 {
+  flex-basis: 58.4795%;
+}
+.col-8 {
+  flex-basis: 66.6667%;
+}
+.col-9 {
+  flex-basis: 76.9231%;
+}
+.col-10 {
+  flex-basis: 83.3333%;
+}
+.col-11 {
+  flex-basis: 91.7431%;
+}
+.col-12 {
+  flex-basis: 100%;
 }
 
 .card-small {
@@ -44,6 +96,7 @@
   box-sizing: border-box;
   box-shadow: 0px 2px 4px rgba(72, 72, 72, 0.08);
   border-radius: 4px;
+  overflow: hidden;
 }
 
 .garden {
@@ -90,7 +143,7 @@
   display: flex;
   flex-wrap: wrap;
   float: left;
-  margin: 0px 10px 0px 10px;
+  margin: 0px 0px 0px 0px;
 }
 
 h2 {
