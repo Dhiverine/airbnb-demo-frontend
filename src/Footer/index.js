@@ -57,9 +57,6 @@ const RightCorner = styled.div`
   width: 66.6667%;
   display: flex;
   justify-content: flex-end;
-  /*flex: wrap;*/
-  /*align-items: left;
-  display: inline-block;*/
 `;
 const Link = styled.div`
   margin-top: 8px;
@@ -97,10 +94,7 @@ const InLineLink = styled.a`
   text-align: left;
   color: #636363;
   margin-left: 20px;
-  /*display: inline-block;*/
-  /*vertical-align: middle;*/
   text-decoration: none;
-  /*justify-content: space-between;*/
 `;
 
 const Social = styled.div``;

@@ -1,185 +1,50 @@
 import React, { Component } from "react";
-import logo from "./logo.svg";
-import StarRating from "react-star-rating";
-import "./App.css";
 import "./fonts.css";
 import Footer from "./Footer/index.js";
 import Header from "./Header/index.js";
 import Explore from "./Explore Airbnb/index.js";
+import Experiences from "./Experiences/index.js";
+import Reservations from "./Reservations/index.js";
+import Destinations from "./Destinations/index.js";
+import Homes from "./Homes/index.js";
+import styled from "styled-components";
+
+const Caption = styled.h1`
+  font-family: Circular-Air-Bold;
+  line-height: 34px;
+  font-size: 32px;
+  color: #383838;
+  align: left;
+  margin-top: 48px;
+
+  @media only screen and (max-width: 768px) {
+    font: 24px "CircularAir-Bold", sans-serif;
+  }
+`;
+
+const Wrap = styled.div`
+  width: 976px;
+  margin-left: auto;
+  margin-right: auto;
+`;
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <div class="container">
-          <Header />
-          <div>
-            <h2>Explore Airbnb</h2>
-          </div>
-          <Explore />
-          <div>
-            <h2>Experiences</h2>
-          </div>
-        </div>
-        <div class="container">
-          <div class="row">
-            <div class="col-3">
-              <div class="card-high">
-                <img
-                  class="img"
-                  src={require("./Airbnb_images/Rectangle-3.png")}
-                />
-                <div class="captiondiv">
-                  <p class="p2">
-                    <b>$29</b> Forest therapy<br />
-                      ★★★★★ 44 reviews
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-3">
-              <div class="card-high">
-                <img
-                  class="img"
-                  src={require("./Airbnb_images/Rectangle-2.png")}
-                />
-                <div class="captiondiv">
-                  <p class="p2">
-                    <b>69</b> Whale watching<br />
-                    ★★★★★ 46 reviews
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-3">
-              <div class="card-high">
-                <img
-                  class="img"
-                  src={require("./Airbnb_images/Rectangle-1.png")}
-                />
-                <div class="captiondiv">
-                  <p class="p2">
-                    <b>$69</b> Table Mountain Summit<br />
-                    ★★★★★ 44 reviews
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-3">
-              <div class="card-high">
-                <img
-                  class="img"
-                  src={require("./Airbnb_images/Rectangle.png")}
-                />
-                <div class="captiondiv">
-                  <p class="p2">
-                    <b>$50</b> Salsa night<br />
-                    ★★★★★ 44 reviews
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div>
-          <h2>Homes</h2>
-        </div>
-        <div class="homes">
-          <div class="card-medium">
-            <img
-              class="img"
-              src={require("./Airbnb_images/Rectangle 6-2.png")}
-            />
-            <h4>$82 La Salentina, nature & relax</h4>
-          </div>
-          <div class="card-medium">
-            <img
-              class="img"
-              src={require("./Airbnb_images/Rectangle 6-1.png")}
-            />
-            <h4>$82 Your private 3 bedr. riad and axclusi...</h4>
-          </div>
-          <div class="card-medium">
-            <img class="img" src={require("./Airbnb_images/Rectangle 6.png")} />
-            <h4>$200 Dreamy Tropical Tree House</h4>
-          </div>
-        </div>
-        <div>
-          <h2>Popular reservations around the world</h2>
-        </div>
-        <div class="Experiences">
-          <div class="card-smaller">
-            <img
-              class="img"
-              src={require("./Airbnb_images/Rectangle 6-6.png")}
-            />
-            <h5>Chumley's</h5>
-          </div>
-          <div class="card-smaller">
-            <img
-              class="img"
-              src={require("./Airbnb_images/Rectangle 6-5.png")}
-            />
-            <h5>Hanjan</h5>
-          </div>
-          <div class="card-smaller">
-            <img
-              class="img"
-              src={require("./Airbnb_images/Rectangle 6-4.png")}
-            />
-            <h5>Prime Meats</h5>
-          </div>
-          <div class="card-smaller">
-            <img
-              class="img"
-              src={require("./Airbnb_images/Rectangle 6-3.png")}
-            />
-            <h5>Seaprice</h5>
-          </div>
-        </div>
-        <div>
-          <h2>Featured destinations</h2>
-        </div>
-        <div class="two-colomned">
-          <div class="small-high">
-            <img
-              class="img"
-              src={require("./Airbnb_images/Rectangle 6-12.png")}
-            />
-          </div>
-          <div class="small-high">
-            <img
-              class="img"
-              src={require("./Airbnb_images/Rectangle 6-11.png")}
-            />
-          </div>
-          <div class="small-high">
-            <img
-              class="img"
-              src={require("./Airbnb_images/Rectangle 6-10.png")}
-            />
-          </div>
-          <div class="small-high">
-            <img
-              class="img"
-              src={require("./Airbnb_images/Rectangle 6-9.png")}
-            />
-          </div>
-          <div class="small-high">
-            <img
-              class="img"
-              src={require("./Airbnb_images/Rectangle 6-8.png")}
-            />
-          </div>
-          <div class="small-high">
-            <img
-              class="img"
-              src={require("./Airbnb_images/Rectangle 6-7.png")}
-            />
-          </div>
-        </div>
+      <Wrap>
+        <Header />
+        <Caption>Explore Airbnb</Caption>
+        <Explore />
+        <Caption>Experiences</Caption>
+        <Experiences />
+        <Caption>Homes</Caption>
+        <Homes />
+        <Caption>Popular reservations around the world</Caption>
+        <Reservations />
+        <Caption>Featured destinations</Caption>
+        <Destinations />
         <Footer />
-      </div>
+      </Wrap>
     );
   }
 }
